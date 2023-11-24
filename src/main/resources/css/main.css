@@ -1,0 +1,7 @@
+
+.button {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #f46700;
+    -fx-cursor: pointer;
+}
