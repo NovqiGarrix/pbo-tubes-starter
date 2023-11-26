@@ -1,10 +1,12 @@
 # Aplikasi Formulir Pendaftaran Konser
+![A POS application](src/main/resources/images/done.png)
+
 Sebagai awalan (starting-pack) yang akan kalian gunakan untuk membuat tugas besar.
 
-## Features
+## Fitur
 - Bisa menyimpan data peserta ke Database
 
-## TODO
+## TODOs
 - Memberikan background color atau image pada aplikasi
 - Berikan style pada komponen-komponen yang digunakan sehingga menghasilkan UI yang lebih baik lagi
 - Tambahkan fitur Edit data peserta
@@ -13,6 +15,10 @@ Sebagai awalan (starting-pack) yang akan kalian gunakan untuk membuat tugas besa
 - Tambahkan fitur pencarian. Tips, tambahkan index di kolom nama_peserta, agar proses pencarian cepat
 - Tambahkan fitur Print untuk mencetak data peserta
 - Tambahkan tombol Exit untuk keluar dari aplikasi
+- Buat buku pengguna (manual book) dari aplikasi yang telah kalian buat. Minimal 25 halaman menggunakan template (TODO) [ini]()
 
 ## Tugas teman - teman
-Tugas kalian adalah mengimplementasikan semua TODO tersebut! Jika bingung, jangan ragu untuk bertanya ya teman - teman. Saya siap meet dan ajarkan langsung, kalau kalian bingung.
+Tugas kalian adalah menyelesaikan semua TODO tersebut! Jika bingung, jangan ragu untuk bertanya ya teman - teman. Saya siap meet dan ajarkan langsung, kalau kalian bingung.
+
+## Sebelum Mengerjakan
+Sebelum mengerjakan pastikan teman - teman sudah menginstall [SceneBuilder](https://gluonhq.com/products/scene-builder/) ya. Jika bingung silahkan tanyakan saja ya!

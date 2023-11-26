@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.praktikum_gui.HelloController">
    <children>
       <VBox alignment="CENTER" prefHeight="55.0" prefWidth="600.0">
          <children>
@@ -36,7 +36,7 @@
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="286.0" spacing="18.0">
                      <children>
                         <Label text="Jenis Kelamin" />
-                        <ChoiceBox prefHeight="26.0" prefWidth="159.0" />
+                        <ChoiceBox fx:id="choiceBoxJk" prefHeight="26.0" prefWidth="159.0" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="47.0" prefHeight="37.0" prefWidth="286.0" spacing="63.0">
@@ -60,7 +60,7 @@
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="158.0" prefHeight="37.0" prefWidth="286.0">
                      <children>
                         <Label prefHeight="17.0" prefWidth="93.0" text="Kategori Tiket" />
-                        <TextField />
+                        <ChoiceBox prefHeight="26.0" prefWidth="159.0" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="195.0" prefHeight="37.0" prefWidth="286.0" spacing="9.0">
