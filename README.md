@@ -3,7 +3,7 @@
 
 Sebagai awalan (starting-pack) yang akan kalian gunakan untuk membuat tugas besar.
 
-## Fitur
+## Fitur yang sudah dibuat
 - Bisa menyimpan data peserta ke Database
 
 ## TODOs
