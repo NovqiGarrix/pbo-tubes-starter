@@ -12,6 +12,17 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+
+        HelloController helloController = fxmlLoader.getController();
+
+        new Thread(
+                helloController.loadListKategoriTiket()
+        ).start();
+
+        new Thread(
+                helloController.loadListJenisKelamin()
+        ).start();
+
         stage.setTitle("Formulir Pendaftaran Konser");
         stage.setScene(scene);
         stage.show();

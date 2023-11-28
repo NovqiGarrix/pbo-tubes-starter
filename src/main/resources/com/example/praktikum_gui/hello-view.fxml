@@ -30,7 +30,7 @@
                   <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="286.0" spacing="60.0">
                      <children>
                         <Label text="Nama" />
-                        <TextField />
+                        <TextField fx:id="textFieldNama" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="286.0" spacing="18.0">
@@ -42,34 +42,34 @@
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="47.0" prefHeight="37.0" prefWidth="286.0" spacing="63.0">
                      <children>
                         <Label text="Email" />
-                        <TextField />
+                        <TextField fx:id="textFieldEmail" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="84.0" prefHeight="37.0" prefWidth="286.0" spacing="54.0">
                      <children>
                         <Label text="No. HP" />
-                        <TextField />
+                        <TextField fx:id="textFieldNoHP" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="121.0" prefHeight="37.0" prefWidth="286.0" spacing="45.0">
                      <children>
                         <Label text="Tgl Lahir" />
-                        <TextField />
+                        <TextField fx:id="textFielTglLahir" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="158.0" prefHeight="37.0" prefWidth="286.0">
                      <children>
                         <Label prefHeight="17.0" prefWidth="93.0" text="Kategori Tiket" />
-                        <ChoiceBox prefHeight="26.0" prefWidth="159.0" />
+                        <ChoiceBox fx:id="choiceBoxKategoriTiket" prefHeight="26.0" prefWidth="159.0" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="195.0" prefHeight="37.0" prefWidth="286.0" spacing="9.0">
                      <children>
                         <Label prefHeight="17.0" prefWidth="84.0" text="Jumlah Tiket" />
-                        <TextField />
+                        <TextField fx:id="textFieldJlhTiket" />
                      </children>
                   </HBox>
-                  <Button mnemonicParsing="false" text="Simpan" />
+                  <Button fx:id="buttonSubmit" mnemonicParsing="false" text="Simpan" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="265.0" prefWidth="606.0">
