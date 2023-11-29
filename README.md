@@ -15,7 +15,7 @@ Sebagai awalan (starting-pack) yang akan kalian gunakan untuk membuat tugas besa
 - Tambahkan fitur pencarian. Tips, tambahkan index di kolom nama_peserta, agar proses pencarian cepat
 - Tambahkan fitur Print untuk mencetak data peserta
 - Tambahkan tombol Exit untuk keluar dari aplikasi
-- Buat buku pengguna (manual book) dari aplikasi yang telah kalian buat. Minimal 25 halaman menggunakan template (TODO) [ini]()
+- Buat buku pengguna (manual book) dari aplikasi yang telah kalian buat. Minimal 25 halaman menggunakan template [ini](https://docs.google.com/document/d/18mUz3YqaRrCOmaMrQD4SPPBLdGPM15z6/edit?usp=sharing&ouid=107861325081178268946&rtpof=true&sd=true)
 
 ## Tugas teman - teman
 Tugas kalian adalah menyelesaikan semua TODO tersebut! Jika bingung, jangan ragu untuk bertanya ya teman - teman. Saya siap meet dan ajarkan langsung, kalau kalian bingung.
