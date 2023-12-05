@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 public class User {
 
-    private int id;
+    public int id;
 
     private String nama;
 

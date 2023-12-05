@@ -97,15 +97,15 @@
                               <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Clear" />
                            </children>
                         </VBox>
-                        <TableView prefHeight="196.0" prefWidth="528.0">
+                        <TableView fx:id="tabelPeserta" prefHeight="196.0" prefWidth="528.0">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="Nama" />
-                            <TableColumn prefWidth="75.0" text="Jenis Kelamin" />
-                              <TableColumn prefWidth="75.0" text="Email" />
-                              <TableColumn prefWidth="75.0" text="No. HP" />
-                              <TableColumn prefWidth="75.0" text="Tgl Lahir" />
-                              <TableColumn prefWidth="75.0" text="Kategori Tiket" />
-                              <TableColumn prefWidth="75.0" text="Jumlah Tiket" />
+                            <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Nama" />
+                            <TableColumn fx:id="jkColumn" prefWidth="75.0" text="Jenis Kelamin" />
+                              <TableColumn fx:id="emailColumn" prefWidth="75.0" text="Email" />
+                              <TableColumn fx:id="noHpColumn" prefWidth="75.0" text="No. HP" />
+                              <TableColumn fx:id="tglLahirColumn" prefWidth="75.0" text="Tgl Lahir" />
+                              <TableColumn fx:id="tiketColumn" prefWidth="75.0" text="Kategori Tiket" />
+                              <TableColumn fx:id="jlhTiketColumn" prefWidth="75.0" text="Jumlah Tiket" />
                           </columns>
                         </TableView>
                      </children>

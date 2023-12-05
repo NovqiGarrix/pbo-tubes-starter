@@ -7,12 +7,13 @@ import com.example.praktikum_gui.service.JenisKelaminService;
 import com.example.praktikum_gui.service.KategoriTiketService;
 import com.example.praktikum_gui.service.UserService;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
 import java.sql.Date;
@@ -44,6 +45,30 @@ public class HelloController implements Initializable {
 
     @FXML
     private TextField textFieldNoHP;
+
+    @FXML
+    private TableView<User> tabelPeserta;
+
+    @FXML
+    private TableColumn<User, String> emailColumn;
+
+    @FXML
+    private TableColumn<User, String> jkColumn;
+
+    @FXML
+    private TableColumn<User, String> jlhTiketColumn;
+
+    @FXML
+    private TableColumn<User, String> nameColumn;
+
+    @FXML
+    private TableColumn<User, String> noHpColumn;
+
+    @FXML
+    private TableColumn<User, String> tglLahirColumn;
+
+    @FXML
+    private TableColumn<User, String> tiketColumn;
 
     private final UserService userService = new UserService();
     private final JenisKelaminService jenisKelaminService = new JenisKelaminService();
@@ -93,12 +118,37 @@ public class HelloController implements Initializable {
         return task;
     }
 
+    public Task<Void> loadListUsers() {
+
+        return new Task<>() {
+            @Override
+            protected Void call() {
+
+                var users = userService.getAllPeserta();
+                Platform.runLater(() -> tabelPeserta.getItems().addAll(users));
+
+                return null;
+            }
+        };
+
+    }
+
     void setDefaultJk() {
         choiceBoxJk.setValue("Pilih jenis kelamin");
     }
 
     void setDefaultKategoriTiket() {
         choiceBoxKategoriTiket.setValue("Pilih kategori tiket");
+    }
+
+    public void setTabelPesertaColumn() {
+        nameColumn.setCellValueFactory(new PropertyValueFactory<>("nama"));
+        jkColumn.setCellValueFactory(new PropertyValueFactory<>("jk"));
+        emailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
+        noHpColumn.setCellValueFactory(new PropertyValueFactory<>("noHp"));
+        tglLahirColumn.setCellValueFactory(new PropertyValueFactory<>("tglLahir"));
+        tiketColumn.setCellValueFactory(new PropertyValueFactory<>("kategoriTiket"));
+        jlhTiketColumn.setCellValueFactory(new PropertyValueFactory<>("jlhTiket"));
     }
 
     @Override

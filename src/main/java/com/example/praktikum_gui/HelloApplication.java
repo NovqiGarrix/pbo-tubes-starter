@@ -23,6 +23,9 @@ public class HelloApplication extends Application {
                 helloController.loadListJenisKelamin()
         ).start();
 
+        helloController.setTabelPesertaColumn();
+        new Thread(helloController.loadListUsers()).start();
+
         stage.setTitle("Formulir Pendaftaran Konser");
         stage.setScene(scene);
         stage.show();
